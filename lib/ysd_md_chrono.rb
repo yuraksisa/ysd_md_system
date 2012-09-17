@@ -1,4 +1,4 @@
-module YSDModel
+module Model
   module System
     module Chrono
   
@@ -22,7 +22,7 @@ module YSDModel
 
         end_at = Time.now
     
-        result << (end_at - began_at) #* 1000
+        result << (end_at - began_at) 
     
         if result.length > 1
           result
@@ -33,7 +33,5 @@ module YSDModel
       end
   
     end #Chrono
-  
   end #System
-  
 end #Model
