@@ -1,3 +1,5 @@
+require 'ysd-md-user-profile' unless defined?Users::Profile
+ 
 module Model
   module System
   
@@ -17,7 +19,7 @@ module Model
       #   The request user 
       #
       def connected_user
-        nil
+        return Users::Profile::ANONYMOUS_USER
       end
 
     end
